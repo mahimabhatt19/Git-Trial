@@ -29,13 +29,9 @@ pipeline {
                            }
                            }
                             stage('Integration test') {
-                              agent {
-                                    docker {
-                                            reuseNode true
-                                            image 'ubuntu'
-                                           }
-                                    }
                               steps {
+                                       git "https://github.com/Zulaikha12/gitnew.git"
+           
                                 echo "Running the integration test..."
                               }
                            }
