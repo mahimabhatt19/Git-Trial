@@ -1,10 +1,9 @@
-#!/usr/bin/env groovy
 pipeline {
          agent any
          stages {
                  stage('One') {
                  steps {
-                     echo 'Hi, this is Zulaikha from edureka'
+                     echo 'Hi, this is Purnima from TSEC'
                  }
                  }
                  stage('Two') {
@@ -22,25 +21,5 @@ pipeline {
                        echo "Hello"
                  }
                  }
-                 stage('Four') {
-                 parallel { 
-                            stage('Unit Test') {
-                           steps {
-                                echo "Running the unit test..."
-                           }
-                           }
-                            stage('Integration test') {
-                              agent {
-                                    docker {
-                                            reuseNode true
-                                            image 'ubuntu'
-                                           }
-                                    }
-                              steps {
-                                echo "Running the integration test..."
-                              }
-                           }
-                           }
-                           }
-              }
+                               }
 }
