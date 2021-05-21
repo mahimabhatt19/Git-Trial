@@ -3,7 +3,7 @@ pipeline {
          stages {
                  stage('One') {
                  steps {
-                     echo 'Hi, this is Zulaikha from edureka'
+                     echo 'Hi, this is Mahima Bhatt from edureka'
                  }
                  }
                  stage('Two') {
@@ -30,7 +30,7 @@ pipeline {
                            }
                             stage('Integration test') {
                               steps {
-                                       git "https://github.com/Zulaikha12/gitnew.git"
+                                       git "https://github.com/mahimabhatt19/GIT.git"
            
                                 echo "Running the integration test..."
                               }
